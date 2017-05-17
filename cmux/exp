@@ -1,0 +1,11 @@
+#!/usr/bin/expect -f
+
+set host [lindex $argv 0]
+
+spawn ssh -A $USER@$FORTRESS_MACHINE_HOST
+expect "Clone last session ?(y/n)"
+send "n\r"
+expect "Select server:"
+send "$host\r"
+interact
+
