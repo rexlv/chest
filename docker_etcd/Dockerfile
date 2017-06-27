@@ -1,0 +1,2 @@
+FROM elcolio/etcd
+
