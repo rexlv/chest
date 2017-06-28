@@ -5,7 +5,7 @@ import re
 import sys
 import os.path
 
-dir = sys.args[1]
+dir = sys.argv[1]
 
 pattern = re.compile(r"res*p, err :*= http\.[Post,Get]")
 def cursor(path):
